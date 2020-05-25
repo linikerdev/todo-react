@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './global.css';
-import Home from './views/Home';
+import Todo from './views/Todo';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Home />
+    <Todo />
   </React.StrictMode>,
   document.getElementById('root')
 );

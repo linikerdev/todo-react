@@ -19,3 +19,11 @@ body {
   align-items: center;
   height: 100%;
 }
+
+#todo {
+  background-color: #fff;
+  min-width: 400px;
+  width: 30%;
+  padding: 8px;
+  border-radius: 5px;
+}

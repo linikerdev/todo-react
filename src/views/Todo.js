@@ -25,7 +25,7 @@ const Home = () => {
   }
 
   return (
-    <div style={styles.todo}>
+    <div id="todo">
       <Header />
       <FormInsert />
       <Content>
@@ -36,13 +36,3 @@ const Home = () => {
 }
 
 export default Home;
-
-const styles = {
-  todo: {
-    backgroundColor: "#fff",
-    minWidth: "400px",
-    width: "30%",
-    padding: "8px",
-    borderRadius: "5px",
-  },
-};
