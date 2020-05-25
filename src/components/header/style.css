@@ -15,10 +15,14 @@
   align-self: flex-end;
 }
 .header .add {
+  border-radius: 2px;
   line-height: 2.5px;
   align-self: flex-end;
   background-color: #005073;
   padding: 5px 10px;
   color: #fff;
   cursor: pointer;
+}
+.header .add:active {
+  background-color: #02151d;
 }
