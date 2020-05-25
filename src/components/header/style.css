@@ -1,0 +1,24 @@
+.header {
+  font-weight: 600;
+  color: #1396cb;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 5px;
+  margin-bottom: 20px;
+}
+.header .title {
+  flex: 1;
+}
+.header .title {
+  align-self: flex-end;
+}
+.header .add {
+  line-height: 2.5px;
+  align-self: flex-end;
+  background-color: #005073;
+  padding: 5px 10px;
+  color: #fff;
+  cursor: pointer;
+}

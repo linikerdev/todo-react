@@ -1,0 +1,22 @@
+.insert {
+  background: #e2edf3;
+  padding: 10px;
+  display: flex;
+  margin: 10px auto;
+}
+.insert input {
+  float: 1;
+  flex-grow: 1;
+  padding: 8px 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  color: #01afd7;
+  outline: none;
+}
+.insert button {
+  font-size: 14px;
+  padding: 10px;
+  background: #01afd7;
+  color: #fff;
+}
