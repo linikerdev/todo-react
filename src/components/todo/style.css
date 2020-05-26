@@ -14,6 +14,9 @@
   cursor: pointer;
   margin: 0 5px;
 }
+.item .btn:hover {
+  color: #016f88;
+}
 
 .new {
   background-color: #01afd7;
@@ -21,7 +24,7 @@
 }
 .done {
   background-color: #e57373;
-  border: thin solid #D81B60;
+  border: thin solid #d81b60;
   color: #fff;
 }
 .done .text {

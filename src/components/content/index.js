@@ -1,6 +1,5 @@
 import React from 'react';
-
-// import { Container } from './styles';
+import './style.css'
 
 function content(props) {
     return (

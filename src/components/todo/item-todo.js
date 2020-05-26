@@ -5,22 +5,22 @@ import './style.css'
 // import { Container } from './styles';
 
 
-const switchButton = (status) => {
-    return status ? 'fa-times-circle' : 'fa-check-circle'
+const switchButton = (done) => {
+    return done ? 'fa-times-circle' : 'fa-check-circle'
 };
 
-const checkClassItem = (status) => {
-    return status ? 'done' : 'new';
+const checkClassItem = (done) => {
+    return done ? 'done' : 'new';
 }
 
 const TodoItem = (props) => {
     return (
-        <div className={`item ${checkClassItem(props.status)}`}>
-            <div className="text">Ir na cozinha</div>
+        <div className={`item ${checkClassItem(props.done)}`}>
+            <div className="text">{props.text}</div>
             <div className="btn">
-                <i className={`fa ${switchButton(props.status)}`} aria-hidden="true" />
+                <i className={`fa ${switchButton(props.done)}`} aria-hidden="true" />
             </div>
-            <div className="btn">
+            <div className="btn" onClick={() => props.removeTodo(props.index)}>
                 <i className="fa fa-trash" aria-hidden="true" />
             </div>
         </div >
@@ -29,7 +29,7 @@ const TodoItem = (props) => {
 
 TodoItem.propTypes = {
     text: PropTypes.string.isRequired,
-    status: PropTypes.bool.isRequired
+    done: PropTypes.bool.isRequired
 };
 
 export default TodoItem;

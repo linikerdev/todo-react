@@ -22,8 +22,15 @@ body {
 
 #todo {
   background-color: #fff;
-  min-width: 400px;
+  min-width: 500px;
   width: 30%;
   padding: 8px;
   border-radius: 5px;
+}
+#todo .notask {
+  display: block;
+  text-align: center;
+  padding: 20px;
+  float: 1;
+  color: #666;
 }

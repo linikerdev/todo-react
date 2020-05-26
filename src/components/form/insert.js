@@ -1,12 +1,23 @@
-import React from 'react';
+import React, { useState } from "react";
 import './style.css'
-// import { Container } from './styles';
 
-function Insert() {
+
+const Insert = (props) => {
+
+    const [text, setText] = useState("");
+
+    const submitTodo = (e) => {
+        e.preventDefault();
+        props.add(text)
+        return setText("")
+    }
+
+    // const reset = () => setText("")
+
     return (
         <div className="insert">
-            <input type="text" />
-            <button>ADD</button>
+            <input min={5} type="text" placeholder="Insira a tarefa..." value={text} onChange={e => setText(e.target.value)} />
+            <button disabled={!text} onClick={submitTodo}>ADD</button>
         </div>
     )
 }

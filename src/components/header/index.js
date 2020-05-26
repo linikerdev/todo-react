@@ -1,14 +1,19 @@
 import React from 'react';
 import './style.css'
-// import { Container } from './styles';
 
-function header() {
+function header(props) {
+
+    const isShowButton = () => (
+        <div className={props.open ? 'closeAdd' : 'add'} onClick={props.toggleForm}>
+            <i className={props.open ? 'fa fa-minus' : 'fa fa-plus'} aria-hidden="true"></i>
+        </div>
+    )
+
+
     return (
         <div className="header">
             <div className="title">Gerenciador de Tarefas</div>
-            <div className="add">
-                <i className="fa fa-plus" aria-hidden="true"></i>
-            </div>
+            {isShowButton()}
         </div>
     )
 }
