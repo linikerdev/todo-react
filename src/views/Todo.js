@@ -12,6 +12,7 @@ const Todo = () => {
 
 
   useEffect(() => {
+    document.title = "Todo Manager"
     pushStorage(todos)
   }, [todos]);
 
@@ -57,7 +58,6 @@ const Todo = () => {
         ))
       )
   }
-
 
   const isShowForm = open ? (<FormInsert add={addTodo} />) : ""
 
