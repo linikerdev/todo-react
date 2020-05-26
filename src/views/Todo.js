@@ -7,7 +7,7 @@ const keyStorage = 'storageTodo'
 
 const Todo = () => {
 
-  const [todos, setTodo] = useState(JSON.parse(localStorage.getItem(keyStorage) || []))
+  const [todos, setTodo] = useState(JSON.parse(localStorage.getItem(keyStorage)) || [])
   const [open, toggleOpen] = useState(false);
 
 
