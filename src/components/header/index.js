@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './style.css'
 
-function header(props) {
+function Header(props) {
 
     const isShowButton = () => (
         <div className={props.open ? 'closeAdd' : 'add'} onClick={props.toggleForm}>
@@ -18,4 +19,11 @@ function header(props) {
     )
 }
 
-export default header;
+Header.propTypes = {
+    open: PropTypes.bool.isRequired,
+    toggleForm: PropTypes.func,
+};
+
+
+
+export default Header;

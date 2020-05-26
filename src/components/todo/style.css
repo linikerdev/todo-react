@@ -23,11 +23,11 @@
   border: thin solid #1396cb;
 }
 .done {
-  background-color: #e57373;
-  border: thin solid #d81b60;
+  background-color: #4caf50;
+  border: thin solid #fff;
   color: #fff;
 }
 .done .text {
   text-decoration: line-through;
-  color: #000;
+  color: #fff;
 }
